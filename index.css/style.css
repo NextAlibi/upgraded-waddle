@@ -1,0 +1,246 @@
+/* 浏览 */
+/* * {
+  border: 1px solid black;
+} */
+
+/* 初始化 */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #eee;
+}
+* {
+  padding: 0;
+  margin: 5px;
+  font-family: "楷体_GB2312", sans-serif;
+}
+
+/* 每个大区 */
+body > div {
+  display: flex;
+  height: 400px;
+  width: 1210px;
+  /* border: 1px solid black; */
+}
+
+/* 顶部栏全部 */
+.dingBu {
+  /* flex及布局 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* 大小 */
+  height: 80px;
+  width: 1200px;
+  /* 圆角 */
+  border-radius: 10px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+
+/* 头像区 */
+.touXiang {
+  /* flex及布局 */
+  display: flex;
+  align-items: center;
+  /* 位于顶部的定位 */
+  margin-left: 20px;
+  /* flex圆角及大小 */
+  border-radius: 20px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+  height: 55px;
+}
+/* 头像：图片大小 */
+.imgTouXiang {
+  height: 100%;
+  width: auto;
+}
+
+/* 导航栏 */
+.daoHang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+}
+.daoHang ul {
+  display: flex;
+  list-style: none;
+}
+.daoHang ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 70px;
+  width: 70px;
+  border-radius: 45px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+
+/* 时间 */
+.shiJian {
+  /* flex及布局 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 位于顶部的定位 */
+  margin-right: 20px;
+  /* flex圆角及大小 */
+  border-radius: 35px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+  height: 50px;
+  width: 80px;
+  /* 字 */
+  font-size: small;
+}
+
+/* 图片轮播 */
+.lunBo {
+  display: flex;
+  height: 350px;
+  width: 1200px;
+  border-radius: 10px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+.lunBo ul {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 800px;
+  height: 200px;
+}
+
+.lunBo .ul:hover {
+  cursor: pointer;
+}
+
+.lunBo ul li {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  transition-duration: 0.4s;
+  /* object-fit: cover; */
+  width: 420px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 20px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+
+.lunBo div {
+  width: 15px;
+  height: 5px;
+  border: 1px solid rgb(121, 130, 160);
+  border-radius: 25px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+  bottom: -80px;
+  position: absolute;
+  background-color: #eee;
+}
+
+/* 主内容 一 */
+.zhu1 {
+  height: 100%;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+.zhu2 {
+  height: 100%;
+  width: 25%;
+  border-radius: 10px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+.zhu3 {
+  height: 100%;
+  width: 12.5%;
+  border-radius: 10px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+
+/* 主内容 二 */
+.zhu1 {
+  height: 100%;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+.zhu2 {
+  height: 100%;
+  width: 25%;
+  border-radius: 10px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+.zhu3 {
+  height: 100%;
+  width: 12.5%;
+  border-radius: 10px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+
+/* 主内容 三 */
+.QvYu5 {
+  flex-direction: column;
+  width: 1210px;
+  height: auto;
+}
+.tuiJian {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 1200px;
+  border-radius: 10px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+  font-size: large;
+}
+.lieBiao {
+  display: flex;
+  width: 100%;
+}
+.lieBiao ul {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.lieBiao ul li {
+  display: flex;
+  height: 350px;
+  width: 292.5px;
+  border-radius: 10px;
+  box-shadow: -2px -2px 6px rgb(255, 255, 255),
+    4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+.liZuoCe {
+  margin-left: 0;
+}
+.liYouCe {
+  margin-right: 0;
+}
